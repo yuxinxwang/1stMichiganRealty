@@ -1,0 +1,5 @@
+selenium==3.141.0
+numpy==1.18.1
+pandas==1.0.1
+pickle==4.0
+webdriver_manager==2.4.0
