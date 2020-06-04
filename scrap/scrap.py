@@ -49,7 +49,7 @@ def download(list_of_address):
                 with open(target_file_name, "w") as file:
                     file.write(html_source)
                 print('Done with', address)
-            elif user_decision.strip()=='q':
+            elif user_decision.strip() == 'q':
                 driver.quit()
                 problems.append(address)
                 return problems
