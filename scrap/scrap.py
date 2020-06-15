@@ -6,9 +6,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 # from selenium.webdriver.common.keys import Keys
 # from selenium.webdriver.support.ui import Select
 
-
-
-
 def load_file(file_name='sample_addresses.pickle'):
     with open(file_name,'rb') as f:
         needed_addresses = pickle.load(f)
@@ -67,9 +64,10 @@ def download(list_of_address):
 
 if __name__ == '__main__':
     needed_addresses = load_file()
-    problems = download(needed_addresses[:50])
+    # print(needed_addresses[:3])
+    problems = download(needed_addresses[:3])
 
-    if len(problems)>0:
-        print(problems)
-        with open('html/problem.pickle', 'wb') as b:
-            pickle.dump(problems,b)
+    # if len(problems)>0:
+    #     print(problems)
+    #     with open('html/problem.pickle', 'wb') as b:
+    #         pickle.dump(problems,b)
