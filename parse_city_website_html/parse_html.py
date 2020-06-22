@@ -54,7 +54,7 @@ def find_useful(subdir_name, file_name, errors=[]):
 
 
 if __name__=='__main__':
-    SUBDIR = 'demo_html'
+    SUBDIR = 'test_html'
     path = gen_path(SUBDIR)
     errors = []
 
