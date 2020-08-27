@@ -29,8 +29,12 @@ def get_data_from_json(json_data):
         # json_data = json.loads(json_data)
         # print(type(json_data))
         # print(json_data.keys())
-        search_results = json_data['cat1']
-        search_results = search_results["searchResults"]
+        try:
+            search_results = json_data['cat1']
+            search_results = search_results["searchResults"]
+        except:
+            search_results = json_data['searchResults']
+
         search_results = search_results['listResults']
 
         for properties in search_results:
